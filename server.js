@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware xử lý form
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -25,6 +25,6 @@ app.post('/submit-form', (req, res) => {
   });
   
 
-app.listen(port, () => {
-  console.log(`Server đang chạy tại: http://localhost:${port}`);
-});
+  app.listen(PORT, () => {
+    console.log(`Server đang chạy tại cổng ${PORT}`);
+  });
