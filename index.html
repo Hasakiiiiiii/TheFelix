@@ -51,6 +51,11 @@
 		href="feed/index.html" />
 	<link rel="alternate" type="application/rss+xml" title="THE FELIX THUẬN AN BÌNH DƯƠNG &raquo; Comments Feed"
 		href="comments/feed/index.html" />
+	<link rel="stylesheet" href="./index.js">
+	<link rel="stylesheet" href="./index.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<!-- JS -->
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script type="text/javascript">
 		/* <![CDATA[ */
 		window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/thefelixcholdings.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8" } };
@@ -720,10 +725,12 @@
 								<li id="menu-item-17"
 									class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-17 active menu-item-design-default">
 									<a href="index.html#tong-quan" aria-current="page" class="nav-top-link">Tổng
-										Quan</a></li>
+										Quan</a>
+								</li>
 								<li id="menu-item-18"
 									class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-18 active menu-item-design-default">
-									<a href="index.html#vi-tri" aria-current="page" class="nav-top-link">Vị Trí</a></li>
+									<a href="index.html#vi-tri" aria-current="page" class="nav-top-link">Vị Trí</a>
+								</li>
 								<li id="menu-item-19"
 									class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-19 active menu-item-design-default">
 									<a href="index.html#tien-ich" aria-current="page" class="nav-top-link">Tiện Ích</a>
@@ -735,14 +742,16 @@
 								<li id="menu-item-253"
 									class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-253 active menu-item-design-default">
 									<a href="index.html#thanh-toan" aria-current="page" class="nav-top-link">Thanh
-										Toán</a></li>
+										Toán</a>
+								</li>
 								<li id="menu-item-22"
 									class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-22 active menu-item-design-default">
 									<a href="index.html#hinh-anh" aria-current="page" class="nav-top-link">Hình Ảnh</a>
 								</li>
 								<li id="menu-item-21"
 									class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-21 active menu-item-design-default">
-									<a href="index.html#video" aria-current="page" class="nav-top-link">Video</a></li>
+									<a href="index.html#video" aria-current="page" class="nav-top-link">Video</a>
+								</li>
 								<li id="menu-item-23"
 									class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-23 active menu-item-design-default">
 									<a href="index.html#tin-tuc" aria-current="page" class="nav-top-link">Tin Tức</a>
@@ -779,7 +788,7 @@
 
 
 
-				<div class="banner has-hover" id="banner-1420653408">
+				<!-- <div class="banner has-hover" id="banner-1420653408">
 					<div class="banner-inner fill">
 						<div class="banner-bg fill">
 							<div class="bg fill bg-fill "></div>
@@ -838,7 +847,7 @@
 							}
 						}
 					</style>
-				</div>
+				</div> -->
 
 
 				<span class="scroll-to" data-label="Scroll to: #tong-quan" data-bullet="false" data-link="#tong-quan"
@@ -1342,7 +1351,8 @@
 													href="https://thienancentral.vn/">Thiên Ân Central</a></span> | 
 											<span style="color: #ffcc00;"><a style="color: #ffcc00;"
 													href="https://fresiariversides.vn/">Fresia Riverside Biên
-													Hòa</a></span>.</p>
+													Hòa</a></span>.
+										</p>
 
 										<style>
 											#text-961068238 {
@@ -1720,6 +1730,18 @@
 							<h3 class="section-title section-title-center"><b></b><span class="section-title-main">MẶT
 									BẰNG THE FELIX</span><b></b></h3>
 						</div>
+						<div class="image-selector-buttons" style="text-align:center; margin-top: 20px;">
+							<button class="btn-slide" data-index="0">Tầng 1</button>
+							<button class="btn-slide" data-index="1">Tầng 5</button>
+							<button class="btn-slide" data-index="2">Tầng 21</button>
+							<button class="btn-slide" data-index="3">9-20 & 25-40</button>
+							<button class="btn-slide" data-index="4">1PN-1WC</button>
+							<button class="btn-slide" data-index="5">2PN-2WC</button>
+							<button class="btn-slide" data-index="6">2PN-2WC</button>
+							<button class="btn-slide" data-index="7">2PN-2WC</button>
+							<button class="btn-slide" data-index="8">3PN-2WC</button>
+							<button class="btn-slide" data-index="9">3PN-2WC</button>
+						</div>
 						<div class="slider-wrapper relative" id="slider-1886392777">
 							<div class="slider slider-nav-circle slider-nav-large slider-nav-light slider-style-normal slider-show-nav"
 								data-flickity-options='{
@@ -1745,9 +1767,9 @@
 								<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_712573145">
 									<div class="img-inner dark">
 										<img loading="lazy" decoding="async" width="1200" height="785"
-											src="wp-content/uploads/2024/06/the-felix-mat-bang-tang-1.jpg"
-											class="attachment-original size-original" alt="Mặt bằng The Felix"
-											srcset="https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-mat-bang-tang-1.jpg 1200w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-mat-bang-tang-1-300x196.jpg 300w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-mat-bang-tang-1-1024x670.jpg 1024w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-mat-bang-tang-1-768x502.jpg 768w"
+											src="./img/MB TIỆN ÍCH CẢNH QUAN_TẦNG 1.png"
+											class="attachment-original size-original" alt="Mặt bằng The Felix111"
+											srcset="./img/MB TIỆN ÍCH CẢNH QUAN_TẦNG 1.png"
 											sizes="auto, (max-width: 1200px) 100vw, 1200px" />
 									</div>
 
@@ -1761,9 +1783,9 @@
 								<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1546020053">
 									<div class="img-inner dark">
 										<img loading="lazy" decoding="async" width="1200" height="783"
-											src="wp-content/uploads/2024/06/the-felix-mat-bang-tang-5.jpg"
-											class="attachment-original size-original" alt="Mặt bằng The Felix"
-											srcset="https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-mat-bang-tang-5.jpg 1200w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-mat-bang-tang-5-300x196.jpg 300w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-mat-bang-tang-5-1024x668.jpg 1024w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-mat-bang-tang-5-768x501.jpg 768w"
+											src="./img/MB TIỆN ÍCH CẢNH QUAN_TẦNG 5.png"
+											class="attachment-original size-original" alt="Mặt bằng The Felix111"
+											srcset="./img/MB TIỆN ÍCH CẢNH QUAN_TẦNG 5.png"
 											sizes="auto, (max-width: 1200px) 100vw, 1200px" />
 									</div>
 
@@ -1777,9 +1799,9 @@
 								<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1763267171">
 									<div class="img-inner dark">
 										<img loading="lazy" decoding="async" width="1200" height="784"
-											src="wp-content/uploads/2024/06/the-felix-mat-bang-tang-21.jpg"
+											src="./img/MB TIỆN ÍCH CẢNH QUAN_TẦNG 21.png"
 											class="attachment-original size-original" alt="Mặt bằng The Felix"
-											srcset="https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-mat-bang-tang-21.jpg 1200w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-mat-bang-tang-21-300x196.jpg 300w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-mat-bang-tang-21-1024x669.jpg 1024w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-mat-bang-tang-21-768x502.jpg 768w"
+											srcset="./img/MB TIỆN ÍCH CẢNH QUAN_TẦNG 21.png"
 											sizes="auto, (max-width: 1200px) 100vw, 1200px" />
 									</div>
 
@@ -1793,9 +1815,9 @@
 								<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1902942177">
 									<div class="img-inner dark">
 										<img loading="lazy" decoding="async" width="1200" height="787"
-											src="wp-content/uploads/2024/06/the-felix-mat-bang-tang-9.jpg"
+											src="./img/MB TẦNG CĂN HỘ ĐIỂN HÌNH (9_12, 15_20, 25_40).png"
 											class="attachment-original size-original" alt="Mặt bằng The Felix"
-											srcset="https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-mat-bang-tang-9.jpg 1200w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-mat-bang-tang-9-300x197.jpg 300w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-mat-bang-tang-9-1024x672.jpg 1024w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-mat-bang-tang-9-768x504.jpg 768w"
+											srcset="./img/MB TẦNG CĂN HỘ ĐIỂN HÌNH (9_12, 15_20, 25_40).png"
 											sizes="auto, (max-width: 1200px) 100vw, 1200px" />
 									</div>
 
@@ -1809,9 +1831,9 @@
 								<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_2097206802">
 									<div class="img-inner dark">
 										<img loading="lazy" decoding="async" width="1200" height="849"
-											src="wp-content/uploads/2024/06/the-felix-can-ho-1.jpg"
+											src="./img/MB CĂN HỘ 1PN+1WC - 45.18M.png"
 											class="attachment-original size-original" alt="Mặt bằng The Felix"
-											srcset="https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-can-ho-1.jpg 1200w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-can-ho-1-300x212.jpg 300w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-can-ho-1-1024x724.jpg 1024w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-can-ho-1-768x543.jpg 768w"
+											srcset="./img/MB CĂN HỘ 1PN+1WC - 45.18M.png"
 											sizes="auto, (max-width: 1200px) 100vw, 1200px" />
 									</div>
 
@@ -1825,9 +1847,9 @@
 								<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_590745240">
 									<div class="img-inner dark">
 										<img loading="lazy" decoding="async" width="1200" height="849"
-											src="wp-content/uploads/2024/06/the-felix-can-ho-2.jpg"
+											src="./img/MB CĂN HỘ 2PN2WC - 59.75M.png"
 											class="attachment-original size-original" alt="Mặt bằng The Felix"
-											srcset="https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-can-ho-2.jpg 1200w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-can-ho-2-300x212.jpg 300w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-can-ho-2-1024x724.jpg 1024w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-can-ho-2-768x543.jpg 768w"
+											srcset="./img/MB CĂN HỘ 2PN2WC - 59.75M.png"
 											sizes="auto, (max-width: 1200px) 100vw, 1200px" />
 									</div>
 
@@ -1841,9 +1863,9 @@
 								<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1772963242">
 									<div class="img-inner dark">
 										<img loading="lazy" decoding="async" width="1200" height="848"
-											src="wp-content/uploads/2024/06/the-felix-can-ho-3.jpg"
+											src="./img/MB CĂN HỘ 2PN2WC - 61.85M.png"
 											class="attachment-original size-original" alt="Mặt bằng The Felix"
-											srcset="https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-can-ho-3.jpg 1200w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-can-ho-3-300x212.jpg 300w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-can-ho-3-1024x724.jpg 1024w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-can-ho-3-768x543.jpg 768w"
+											srcset="./img/MB CĂN HỘ 2PN2WC - 61.85M.png"
 											sizes="auto, (max-width: 1200px) 100vw, 1200px" />
 									</div>
 
@@ -1857,9 +1879,39 @@
 								<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_71612008">
 									<div class="img-inner dark">
 										<img loading="lazy" decoding="async" width="2560" height="1811"
-											src="wp-content/uploads/2024/06/the-felix-can-ho-4-scaled.jpg"
+											src="./img/MB CĂN HỘ 2PN2WC - 70.20M.png"
 											class="attachment-original size-original" alt="Mặt bằng The Felix"
-											srcset="https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-can-ho-4-scaled.jpg 2560w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-can-ho-4-300x212.jpg 300w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-can-ho-4-1024x724.jpg 1024w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-can-ho-4-768x543.jpg 768w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-can-ho-4-1536x1086.jpg 1536w, https://thefelixcholdings.com/wp-content/uploads/2024/06/the-felix-can-ho-4-2048x1449.jpg 2048w"
+											srcset="./img/MB CĂN HỘ 2PN2WC - 70.20M.png"
+											sizes="auto, (max-width: 2560px) 100vw, 2560px" />
+									</div>
+
+									<style>
+										#image_71612008 {
+											width: 100%;
+										}
+									</style>
+								</div>
+								<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_71612008">
+									<div class="img-inner dark">
+										<img loading="lazy" decoding="async" width="2560" height="1811"
+											src="./img/MB CĂN HỘ 3PN2WC - 85.58M.png"
+											class="attachment-original size-original" alt="Mặt bằng The Felix"
+											srcset="./img/MB CĂN HỘ 3PN2WC - 85.58M.png"
+											sizes="auto, (max-width: 2560px) 100vw, 2560px" />
+									</div>
+
+									<style>
+										#image_71612008 {
+											width: 100%;
+										}
+									</style>
+								</div>
+								<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_71612008">
+									<div class="img-inner dark">
+										<img loading="lazy" decoding="async" width="2560" height="1811"
+											src="./img/MB CĂN HỘ 3PN2WC - 85.58M (1).png"
+											class="attachment-original size-original" alt="Mặt bằng The Felix"
+											srcset="./img/MB CĂN HỘ 3PN2WC - 85.58M.png (1)"
 											sizes="auto, (max-width: 2560px) 100vw, 2560px" />
 									</div>
 
@@ -1878,6 +1930,7 @@
 
 
 					</div>
+
 
 
 					<style>
@@ -1917,145 +1970,29 @@
 										<h3 class="section-title section-title-center"><b></b><span
 												class="section-title-main">THANH TOÁN THE FELIX</span><b></b></h3>
 									</div>
-									<p style="text-align: center;"><span style="color: #f99b1c;"><strong>PHƯƠNG THỨC
-												THANH TOÁN CHUẨN</strong></span></p>
-									<table style="width: 100%;" width="100%">
-										<tbody>
-											<tr>
-												<td style="width: 8.75486%; text-align: center;" width="79">
-													<strong>ĐỢT</strong></td>
-												<td style="width: 26.2646%; text-align: center;" width="417">
-													<strong>THỜI GIAN THANH TOÁN</strong></td>
-												<td style="width: 16.1479%; text-align: center;" width="227"><strong>TỶ
-														LỆ</strong></td>
-												<td style="width: 22.5681%; text-align: center;" colspan="2"
-													width="326"><strong>THỜI GIAN DỰ KIẾN</strong></td>
-											</tr>
-											<tr>
-												<td style="width: 8.75486%; text-align: center;" width="79"> </td>
-												<td style="width: 26.2646%;" width="417">Ký văn bản thỏa thuận (trong
-													vòng 07 ngày kể từ ngày đặt cọc)</td>
-												<td style="width: 16.1479%;" width="227">15%</td>
-												<td style="width: 22.5681%;" colspan="2" width="326">Thanh toán trên TGT
-													chưa bao gồm VAT</td>
-											</tr>
-											<tr>
-												<td style="width: 8.75486%; text-align: center;" width="79">1</td>
-												<td style="width: 26.2646%;" width="417">Ký Hợp đồng mua bán (trong vòng
-													15 ngày kể từ khi CĐT thông báo Ký Hợp đồng mua bán)</td>
-												<td style="width: 16.1479%;" width="227">15%</td>
-												<td style="width: 22.5681%;" colspan="2" width="326">Thanh toán trên TGT
-													bao gồm VAT + Thu bù VAT Đợt 1</td>
-											</tr>
-											<tr>
-												<td style="width: 8.75486%; text-align: center;" width="79">2</td>
-												<td style="width: 26.2646%;" width="417">Sau 1 tháng kể từ ngày ký HDĐC
-												</td>
-												<td style="width: 16.1479%;" width="227">5%</td>
-												<td style="width: 22.5681%;" colspan="2" width="326">Thanh toán trên TGT
-													bao gồm VAT</td>
-											</tr>
-											<tr>
-												<td style="width: 8.75486%; text-align: center;" width="79">3-11</td>
-												<td style="width: 26.2646%;" width="417">Trong vòng 30 ngày kể từ ngày
-													thanh toán đợt trước</td>
-												<td style="width: 16.1479%;" width="227">5%</td>
-												<td style="width: 22.5681%;" colspan="2" width="326">Thanh toán trên TGT
-													bao gồm VAT</td>
-											</tr>
-											<tr>
-												<td style="width: 8.75486%; text-align: center;" width="79">12</td>
-												<td style="width: 26.2646%;" width="417">Trong vòng 30 ngày kể từ ngày
-													thanh toán Đợt 11</td>
-												<td style="width: 16.1479%;" width="227">7%</td>
-												<td style="width: 22.5681%;" colspan="2" width="326">
-													<p style="text-align: left;">Thanh toán trên TGT bao gồm VAT</p>
-												</td>
-											</tr>
-											<tr>
-												<td style="width: 8.75486%; text-align: center;" width="79">4-12</td>
-												<td style="width: 26.2646%;" width="417">Mỗi đợt cách nhau 1 tháng</td>
-												<td style="width: 16.1479%;" width="227">1%</td>
-												<td style="width: 22.5681%;" colspan="2" width="326">Thanh toán trên TGT
-													bao gồm VAT</td>
-											</tr>
-											<tr>
-												<td style="width: 8.75486%; text-align: center;" width="79">13</td>
-												<td style="width: 26.2646%;" width="417">Trong vòng 30 ngày kể từ ngày
-													thanh toán Đợt 12</td>
-												<td style="width: 16.1479%;" width="227">7%</td>
-												<td style="width: 22.5681%;" colspan="2" width="326">Thanh toán trên TGT
-													bao gồm VAT</td>
-											</tr>
-											<tr>
-												<td style="width: 8.75486%; text-align: center;" width="79">14-17</td>
-												<td style="width: 26.2646%;" width="417">Trong vòng 30 ngày kể từ ngày
-													thanh toán đợt trước</td>
-												<td style="width: 16.1479%;" width="227">1%</td>
-												<td style="width: 22.5681%;" colspan="2" width="326">Thanh toán trên TGT
-													bao gồm VAT</td>
-											</tr>
-											<tr>
-												<td style="width: 8.75486%; text-align: center;">18</td>
-												<td style="width: 26.2646%;">Trong vòng 30 ngày kể từ ngày thanh toán
-													Đợt 17</td>
-												<td style="width: 16.1479%;">6%</td>
-												<td style="width: 22.5681%;" colspan="2">Thanh toán trên TGT bao gồm VAT
-												</td>
-											</tr>
-											<tr>
-												<td style="width: 8.75486%; text-align: center;">19-23</td>
-												<td style="width: 26.2646%;">Trong vòng 30 ngày kể từ ngày thanh toán
-													đợt trước</td>
-												<td style="width: 16.1479%;">1%</td>
-												<td style="width: 22.5681%;" colspan="2">Thanh toán trên TGT bao gồm VAT
-												</td>
-											</tr>
-											<tr>
-												<td style="width: 8.75486%; text-align: center;">24</td>
-												<td style="width: 26.2646%;">Trong vòng 30 ngày kể từ ngày thanh toán
-													Đợt 23</td>
-												<td style="width: 16.1479%;">6%</td>
-												<td colspan="2">Thanh toán trên TGT bao gồm VAT</td>
-											</tr>
-											<tr>
-												<td style="width: 8.75486%; text-align: center;">25</td>
-												<td style="width: 26.2646%;">Trong vòng 30 ngày kể từ ngày thanh toán
-													Đợt 24</td>
-												<td style="width: 16.1479%;">1%</td>
-												<td colspan="2">Thanh toán trên TGT bao gồm VAT</td>
-											</tr>
-											<tr>
-												<td style="width: 8.75486%; text-align: center;">26</td>
-												<td style="width: 26.2646%;">Trong vòng 30 ngày kể từ ngày thanh toán
-													Đợt 25</td>
-												<td style="width: 16.1479%;">25%</td>
-												<td colspan="2">Thanh toán trên TGT bao gồm VAT</td>
-											</tr>
-											<tr>
-												<td style="width: 8.75486%; text-align: center;">27</td>
-												<td style="width: 26.2646%;">Trong vòng 30 ngày kể từ khi nhận được
-													Thông báo bàn giao nhà </td>
-												<td style="width: 16.1479%;">5%</td>
-												<td colspan="2">Thanh toán trên TGT bao gồm VAT</td>
-											</tr>
-											<tr>
-												<td style="width: 8.75486%; text-align: center;">28</td>
-												<td style="width: 26.2646%;">Khi nhận Giấy chứng nhận quyền sở hữu căn
-													hộ</td>
-												<td style="width: 16.1479%;">2%</td>
-												<td style="width: 22.5681%;" colspan="2">Thanh toán trên TGT bao gồm VAT
-												</td>
-											</tr>
-											<tr>
-												<td style="width: 35.0195%;" colspan="2" width="496"><strong>TỔNG
-														CỘNG</strong></td>
-												<td style="width: 16.1479%;" width="227"><strong>100% + 2% PBT</strong>
-												</td>
-												<td style="width: 22.5681%;" colspan="2" width="326"> </td>
-											</tr>
-										</tbody>
-									</table>
+									<div class="section-content relative">
+										<div class="button-wrapper" style="text-align: center; margin-top: 20px;">
+										  <button class="custom-btn-b" data-index="0">PTTT CHUẨN</button>
+										  <button class="custom-btn-b" data-index="1">PTTT VAY 70%</button>
+										  <button class="custom-btn-b" data-index="2">PTTT TRẢ CHẬM 2 NĂM</button>
+										  <button class="custom-btn-b" data-index="3">PTTT NHANH 35% </button>
+										  <button class="custom-btn-b" data-index="4">PTTT NHANH 50% </button>
+										  <button class="custom-btn-b" data-index="5">PTTT NHANH 70% </button>
+										</div>
+										<div id="slider-khu-b">
+										  <div class="slider">
+											<div class="img"><img src="./img/chuan.png" /></div>
+											<div class="img"><img src="./img/Vay70.png" /></div>
+											<div class="img"><img src="./img/ptttcham2nam.png" /></div>
+											<div class="img"><img src="./img/nhanh35.png" /></div>
+											<div class="img"><img src="./img/nhanh50.png" /></div>
+											<div class="img"><img src="./img/nhanh70.png" /></div>
+										  </div>
+										</div>
+									  
+									  </div>
+									  
+
 									<p style="text-align: center;"><a
 											href="wp-content/uploads/2024/12/the-felix-pttt.pdf"><strong><span
 													style="color: #ff0000;">&gt;&gt;&gt; Xem Bảng Thanh Toán Có Mộc
@@ -2065,20 +2002,7 @@
 													href="danh-muc-vat-lieu-ban-giao/index.html">&gt;&gt;&gt; Xem Danh
 													Mục Vật Liệu Bàn Giao</a></strong></span>.</p>
 									<hr />
-									<p style="text-align: center;"><span style="color: #f99b1c;"><strong>CHÍNH SÁCH BÁN
-												HÀNG</strong></span></p>
-									<p style="text-align: center;"><img loading="lazy" decoding="async"
-											class="alignnone wp-image-881 size-full"
-											src="wp-content/uploads/2024/12/the-felix-cs1.jpg" alt="" width="1280"
-											height="720"
-											srcset="https://thefelixcholdings.com/wp-content/uploads/2024/12/the-felix-cs1.jpg 1280w, https://thefelixcholdings.com/wp-content/uploads/2024/12/the-felix-cs1-300x169.jpg 300w, https://thefelixcholdings.com/wp-content/uploads/2024/12/the-felix-cs1-1024x576.jpg 1024w, https://thefelixcholdings.com/wp-content/uploads/2024/12/the-felix-cs1-768x432.jpg 768w"
-											sizes="auto, (max-width: 1280px) 100vw, 1280px" /></p>
-									<p style="text-align: center;"><img loading="lazy" decoding="async"
-											class="alignnone wp-image-882 size-full"
-											src="wp-content/uploads/2024/12/the-felix-cs2.jpg" alt="" width="1280"
-											height="720"
-											srcset="https://thefelixcholdings.com/wp-content/uploads/2024/12/the-felix-cs2.jpg 1280w, https://thefelixcholdings.com/wp-content/uploads/2024/12/the-felix-cs2-300x169.jpg 300w, https://thefelixcholdings.com/wp-content/uploads/2024/12/the-felix-cs2-1024x576.jpg 1024w, https://thefelixcholdings.com/wp-content/uploads/2024/12/the-felix-cs2-768x432.jpg 768w"
-											sizes="auto, (max-width: 1280px) 100vw, 1280px" /></p>
+
 								</div>
 							</div>
 
@@ -2767,13 +2691,14 @@
 												<input type="text" name="ho_ten" placeholder="Họ và tên" required />
 											</p>
 											<p>
-												<input type="tel" name="so_dien_thoai" placeholder="Số điện thoại" required />
+												<input type="tel" name="so_dien_thoai" placeholder="Số điện thoại"
+													required />
 											</p>
 											<p>
 												<input type="submit" value="Đăng ký thông tin" />
 											</p>
 										</form>
-										
+
 									</div>
 								</div>
 							</div>
@@ -2862,31 +2787,40 @@
 			<ul class="nav nav-sidebar nav-vertical nav-uppercase" data-tab="1">
 				<li
 					class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-17">
-					<a href="index.html#tong-quan" aria-current="page">Tổng Quan</a></li>
+					<a href="index.html#tong-quan" aria-current="page">Tổng Quan</a>
+				</li>
 				<li
 					class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-18">
-					<a href="index.html#vi-tri" aria-current="page">Vị Trí</a></li>
+					<a href="index.html#vi-tri" aria-current="page">Vị Trí</a>
+				</li>
 				<li
 					class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-19">
-					<a href="index.html#tien-ich" aria-current="page">Tiện Ích</a></li>
+					<a href="index.html#tien-ich" aria-current="page">Tiện Ích</a>
+				</li>
 				<li
 					class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-20">
-					<a href="index.html#mat-bang" aria-current="page">Mặt Bằng</a></li>
+					<a href="index.html#mat-bang" aria-current="page">Mặt Bằng</a>
+				</li>
 				<li
 					class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-253">
-					<a href="index.html#thanh-toan" aria-current="page">Thanh Toán</a></li>
+					<a href="index.html#thanh-toan" aria-current="page">Thanh Toán</a>
+				</li>
 				<li
 					class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-22">
-					<a href="index.html#hinh-anh" aria-current="page">Hình Ảnh</a></li>
+					<a href="index.html#hinh-anh" aria-current="page">Hình Ảnh</a>
+				</li>
 				<li
 					class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-21">
-					<a href="index.html#video" aria-current="page">Video</a></li>
+					<a href="index.html#video" aria-current="page">Video</a>
+				</li>
 				<li
 					class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-23">
-					<a href="index.html#tin-tuc" aria-current="page">Tin Tức</a></li>
+					<a href="index.html#tin-tuc" aria-current="page">Tin Tức</a>
+				</li>
 				<li
 					class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-24">
-					<a href="index.html#lien-he" aria-current="page">Liên Hệ</a></li>
+					<a href="index.html#lien-he" aria-current="page">Liên Hệ</a>
+				</li>
 			</ul>
 
 
@@ -2898,18 +2832,11 @@
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/flatsome-child\/*","\/wp-content\/themes\/flatsome\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
 	<div id="pum-744" class="pum pum-overlay pum-theme-736 pum-theme-lightbox popmake-overlay auto_open click_open"
-		data-popmake="{&quot;id&quot;:744,&quot;slug&quot;:&quot;dang-ky-nhan-bao-gia&quot;,&quot;theme_id&quot;:736,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;auto_open&quot;,&quot;settings&quot;:{&quot;cookie_name&quot;:&quot;&quot;,&quot;delay&quot;:&quot;30000&quot;}},{&quot;type&quot;:&quot;auto_open&quot;,&quot;settings&quot;:{&quot;cookie_name&quot;:&quot;&quot;,&quot;delay&quot;:&quot;90000&quot;}},{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;&quot;,&quot;cookie_name&quot;:null}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;tiny&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}"
+		data-popmake="{&quot;id&quot;:744,&quot;slug&quot;:&quot;dang-ky-nhan-bao-gia&quot;,&quot;theme_id&quot;:736,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;auto_open&quot;,&quot;settings&quot;:{&quot;cookie_name&quot;:&quot;&quot;,&quot;delay&quot;:&quot;120000&quot;}},{&quot;type&quot;:&quot;auto_open&quot;,&quot;settings&quot;:{&quot;cookie_name&quot;:&quot;&quot;,&quot;delay&quot;:&quot;90000&quot;}},{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;&quot;,&quot;cookie_name&quot;:null}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;tiny&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}"
 		role="dialog" aria-modal="false">
 
 		<div id="popmake-744"
 			class="pum-container popmake theme-736 pum-responsive pum-responsive-tiny responsive size-tiny">
-
-
-
-
-
-
-
 			<div class="pum-content popmake-content" tabindex="0">
 				<div><img fetchpriority="high" decoding="async" class="" style="margin-bottom: 10px;"
 						src="wp-content/uploads/2024/04/tai-bang-gia.jpg" alt="" width="800" height="450" /></div>
@@ -2927,13 +2854,9 @@
 						<input type="text" name="ho_ten" placeholder="Họ tên">
 						<input type="text" name="so_dien_thoai" placeholder="Số điện thoại">
 						<button type="submit">Gửi</button>
-					  </form>
-					  
+					</form>
 				</div>
 			</div>
-
-
-
 
 			<button type="button" class="pum-close popmake-close" aria-label="Close">
 				&times; </button>
@@ -3398,6 +3321,54 @@
 	<!--[if IE]>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/intersection-observer-polyfill@0.1.0/dist/IntersectionObserver.js?ver=0.1.0" id="intersection-observer-polyfill-js"></script>
 <![endif]-->
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Lấy phần tử slider
+			const sliderElement = document.querySelector("#slider-1886392777 .slider");
+
+			// Khởi tạo Flickity
+			var flkty = new Flickity(sliderElement, {
+				cellAlign: "left",
+				contain: true,
+				wrapAround: true,
+				pageDots: false,
+				prevNextButtons: false,
+			});
+
+			// Gán flkty vào element để có thể dùng lại sau này
+			sliderElement.flickityInstance = flkty;
+
+			// Xử lý click nút
+			const buttons = document.querySelectorAll(".btn-slide");
+
+			buttons.forEach((button) => {
+				button.addEventListener("click", function () {
+					const index = parseInt(button.getAttribute("data-index"));
+					flkty.select(index);
+				});
+			});
+		});
+		document.addEventListener("DOMContentLoaded", function () {
+			const sliderB = document.querySelector("#slider-khu-b .slider");
+		
+			var flktyB = new Flickity(sliderB, {
+			  cellAlign: "left",
+			  contain: true,
+			  wrapAround: true,
+			  pageDots: false,
+			  prevNextButtons: false,
+			});
+		
+			const buttonsB = document.querySelectorAll(".custom-btn-b");
+		
+			buttonsB.forEach((button) => {
+			  button.addEventListener("click", function () {
+				const index = parseInt(button.getAttribute("data-index"));
+				flktyB.select(index);
+			  });
+			});
+		  });
+	</script>
 
 </body>
 
